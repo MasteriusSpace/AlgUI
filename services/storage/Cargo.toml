@@ -1,0 +1,13 @@
+[package]
+name = "storage"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+members = [ "crates/api","crates/db", "crates/pb"]
+
+[dependencies]
+tokio = { version = "1.42", features = ["full"] }
+tonic = "0.12"
+skytable = "0.8"
+tracing = "0.1"
